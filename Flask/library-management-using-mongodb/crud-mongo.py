@@ -82,9 +82,7 @@ def books_authors_details():
             for author in book['author_details']:
                 author['_id'] = str(author['_id'])
 
-    print('-------------')
     print(books)
-    print('------------')
     return jsonify(books), 200
 
 
